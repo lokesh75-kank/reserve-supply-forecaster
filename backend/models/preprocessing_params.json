@@ -1,0 +1,32 @@
+{
+  "feature_names": [
+    "zone_id_encoded",
+    "hour_of_day",
+    "day_of_week",
+    "active_drivers",
+    "reserve_bookings_next_60min",
+    "on_demand_requests_last_60min",
+    "weather_severity",
+    "event_density"
+  ],
+  "residual_std": 2.432697768193352,
+  "threshold_low": 12.0,
+  "threshold_high": 25.0,
+  "label_encoder_classes": [
+    "Z1",
+    "Z2",
+    "Z3",
+    "Z4",
+    "Z5"
+  ],
+  "validation_metrics": {
+    "rmse": 2.4332718418460617,
+    "mae": 1.9429865571708667,
+    "r2": 0.908374209814457
+  },
+  "test_metrics": {
+    "rmse": 2.3868688426898244,
+    "mae": 1.907838267997128,
+    "r2": 0.9070320353063633
+  }
+}
