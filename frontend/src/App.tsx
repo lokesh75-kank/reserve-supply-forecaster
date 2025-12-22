@@ -68,11 +68,11 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col">
+    <div className="min-h-screen bg-gray-100 flex flex-col w-full">
       {/* Compact Header */}
       <header className="bg-white shadow-sm sticky top-0 z-10 w-full">
         <div className="w-full px-3 sm:px-4 lg:px-6 py-3 sm:py-4">
-          <div className="max-w-[1920px] mx-auto">
+          <div className="max-w-[1920px] mx-auto w-full">
             <h1 className="text-xl sm:text-2xl font-bold text-gray-900">
               Reserve Supply Forecaster
             </h1>
@@ -84,9 +84,9 @@ function App() {
       </header>
 
       {/* Main Content - Flex grow to fill screen */}
-      <main className="flex-1 w-full px-2 sm:px-3 md:px-4 lg:px-6 py-3 sm:py-4 overflow-auto">
-        <div className="max-w-[1920px] mx-auto h-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 sm:gap-4 lg:gap-6 h-full">
+      <main className="flex-1 w-full overflow-auto">
+        <div className="w-full max-w-[1920px] mx-auto px-2 sm:px-3 md:px-4 lg:px-6 py-3 sm:py-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 sm:gap-4 lg:gap-6">
             {/* Left Panel - Controls */}
             <div className="min-h-0 flex flex-col">
               <ControlsPanel
@@ -121,7 +121,7 @@ function App() {
       {/* Compact Footer */}
       <footer className="bg-white border-t border-gray-200 mt-auto w-full">
         <div className="w-full px-3 sm:px-4 lg:px-6 py-2">
-          <div className="max-w-[1920px] mx-auto">
+          <div className="max-w-[1920px] mx-auto w-full">
             <p className="text-center text-xs text-gray-500">
               Reserve Supply Forecaster API v1.0.0
             </p>
