@@ -190,6 +190,35 @@ The trained model achieves:
 - `hour_of_day`: 7.94%
 - Other features: < 3% each
 
+## Deployment
+
+This application can be deployed for free using various platforms:
+
+### Option 1: GitHub Pages (Frontend) + Railway (Backend) - Free!
+
+- **Frontend**: Deploy to GitHub Pages (completely free, uses GitHub Actions)
+- **Backend**: Deploy to [Railway](https://railway.app) or [Render](https://render.com) (free tiers)
+
+**Quick Setup:**
+1. **Backend**: Deploy to Railway (see [DEPLOYMENT.md](DEPLOYMENT.md))
+2. **Frontend**: 
+   - Add `VITE_API_URL` secret in GitHub repository settings
+   - Push to main branch - GitHub Actions will auto-deploy to GitHub Pages
+   - Enable GitHub Pages in repository Settings → Pages
+
+See [DEPLOYMENT_GITHUB.md](DEPLOYMENT_GITHUB.md) for GitHub Pages deployment guide.
+
+### Option 2: Vercel (Frontend) + Railway (Backend)
+
+- **Frontend**: Deploy to [Vercel](https://vercel.com) (free)
+- **Backend**: Deploy to [Railway](https://railway.app) (free tier)
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions.
+
+### Important Note
+
+**GitHub Pages can only host static frontend** - it cannot run backend APIs. You'll need Railway, Render, or similar for the FastAPI backend.
+
 ## Future Enhancements
 
 - Real-time data integration
