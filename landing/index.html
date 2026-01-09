@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reserve Supply Forecaster - Predict future driver supply availability for Uber Reserve services">
+    <title>Reserve Supply Forecaster | Uber Reserve Analytics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="8" fill="#000000"/>
+                        <path d="M16 8L20 14H18V22H14V14H12L16 8Z" fill="#FFFFFF"/>
+                    </svg>
+                    <span class="logo-text">Reserve Supply Forecaster</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#how-it-works" class="nav-link">How It Works</a>
+                    <a href="#demo" class="nav-link">Demo</a>
+                    <a href="https://github.com" class="nav-link">GitHub</a>
+                    <a href="#get-started" class="btn-primary">Get Started</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">🚀</span>
+                    <span>Predictive Analytics Platform</span>
+                </div>
+                <h1 class="hero-title">
+                    Forecast Driver Supply<br/>
+                    <span class="gradient-text">Before It's Too Late</span>
+                </h1>
+                <p class="hero-description">
+                    Predict future driver availability for Uber Reserve services with confidence intervals. 
+                    Make better pricing and dispatch decisions using AI-powered supply forecasting.
+                </p>
+                <div class="hero-cta">
+                    <a href="#demo" class="btn-primary btn-large">Try Demo</a>
+                    <a href="https://github.com" class="btn-secondary btn-large">View on GitHub</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-value">90.7%</div>
+                        <div class="stat-label">Model Accuracy</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">2.39</div>
+                        <div class="stat-label">RMSE (drivers)</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">14K+</div>
+                        <div class="stat-label">Data Points</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="dashboard-preview">
+                    <div class="dashboard-header">
+                        <div class="dashboard-dot"></div>
+                        <div class="dashboard-dot"></div>
+                        <div class="dashboard-dot"></div>
+                    </div>
+                    <div class="dashboard-content">
+                        <div class="preview-card">
+                            <div class="preview-label">Zone Forecast</div>
+                            <div class="preview-value">Expected: 24 drivers</div>
+                            <div class="preview-range">Range: 20-28</div>
+                        </div>
+                        <div class="preview-card">
+                            <div class="preview-label">Supply Status</div>
+                            <div class="preview-status balanced">Balanced</div>
+                        </div>
+                        <div class="preview-card">
+                            <div class="preview-label">Recommendation</div>
+                            <div class="preview-text">OK to accept more Reserve bookings</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Statement -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The Challenge</h2>
+                <p class="section-description">
+                    Uber Reserve allows riders to book rides in advance, but operations teams need to predict 
+                    driver availability 1-2 hours ahead to make critical decisions.
+                </p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">💰</div>
+                    <h3>Set Appropriate Pricing</h3>
+                    <p>Balance supply and demand with dynamic pricing based on predicted availability</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">📅</div>
+                    <h3>Accept More Bookings</h3>
+                    <p>Decide whether to accept more Reserve bookings without overcommitting</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🎯</div>
+                    <h3>Trigger Incentives</h3>
+                    <p>Proactively trigger driver incentives when supply is predicted to be tight</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">⚖️</div>
+                    <h3>Balance Supply & Demand</h3>
+                    <p>Proactively balance supply and demand before issues arise</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Key Features</h2>
+                <p class="section-description">
+                    Everything you need to make data-driven decisions about Reserve supply
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z"/>
+                            <path d="M2 17L12 22L22 17"/>
+                            <path d="M2 12L12 17L22 12"/>
+                        </svg>
+                    </div>
+                    <h3>Zone-based Forecasting</h3>
+                    <p>Predict supply at granular geographic level with zone-specific models</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z"/>
+                        </svg>
+                    </div>
+                    <h3>Multi-factor Modeling</h3>
+                    <p>Incorporates weather, events, demand, and temporal patterns</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3V21H21"/>
+                            <path d="M7 16L12 11L16 15L21 10"/>
+                            <path d="M21 10V3H14"/>
+                        </svg>
+                    </div>
+                    <h3>Uncertainty Quantification</h3>
+                    <p>Provides confidence intervals (low/expected/high) for better decision making</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8C21 7.47 20.79 6.96 20.41 6.59L13.41 0.59C13.04 0.21 12.53 0 12 0H4C2.9 0 2 0.9 2 2V22C2 23.1 2.9 24 4 24H20C21.1 24 22 23.1 22 22V16H21Z"/>
+                            <path d="M13 0V7H20"/>
+                        </svg>
+                    </div>
+                    <h3>Scenario Simulation</h3>
+                    <p>Test different conditions (weather, events) interactively</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z"/>
+                            <path d="M2 17L12 22L22 17"/>
+                            <path d="M2 12L12 17L22 12"/>
+                        </svg>
+                    </div>
+                    <h3>Actionable Insights</h3>
+                    <p>Generates recommendations based on predicted supply status</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6V12L16 14"/>
+                        </svg>
+                    </div>
+                    <h3>Real-time Predictions</h3>
+                    <p>Get instant forecasts with sub-second API response times</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-description">
+                    Simple workflow to get accurate supply forecasts
+                </p>
+            </div>
+            <div class="workflow">
+                <div class="workflow-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Input Parameters</h3>
+                        <p>Provide city zone, future pickup time, forecast horizon, and scenario tweaks (weather, events, demand level)</p>
+                    </div>
+                </div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>AI Prediction</h3>
+                        <p>Our RandomForest model analyzes historical patterns and current conditions to predict supply</p>
+                    </div>
+                </div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Get Insights</h3>
+                        <p>Receive predicted available drivers (Low/Expected/High), reliability label, and actionable recommendations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="tech-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Built With Modern Technology</h2>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <div class="tech-name">Python</div>
+                    <div class="tech-desc">Backend & ML</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-name">FastAPI</div>
+                    <div class="tech-desc">REST API</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-name">scikit-learn</div>
+                    <div class="tech-desc">ML Models</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-name">React</div>
+                    <div class="tech-desc">Frontend UI</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-name">TypeScript</div>
+                    <div class="tech-desc">Type Safety</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-name">Tailwind CSS</div>
+                    <div class="tech-desc">Styling</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="get-started" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Get Started?</h2>
+                <p class="cta-description">
+                    Start forecasting driver supply and make better Reserve pricing decisions today
+                </p>
+                <div class="cta-buttons">
+                    <a href="#demo" class="btn-primary btn-large">Try Demo</a>
+                    <a href="https://github.com" class="btn-secondary btn-large">View Documentation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="32" height="32" rx="8" fill="#000000"/>
+                            <path d="M16 8L20 14H18V22H14V14H12L16 8Z" fill="#FFFFFF"/>
+                        </svg>
+                        <span>Reserve Supply Forecaster</span>
+                    </div>
+                    <p class="footer-description">
+                        Predictive analytics platform for Uber Reserve services
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#demo">Demo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com">GitHub</a></li>
+                        <li><a href="/docs">Documentation</a></li>
+                        <li><a href="/README.md">README</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="/LICENSE">License</a></li>
+                        <li><a href="#privacy">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Reserve Supply Forecaster. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
