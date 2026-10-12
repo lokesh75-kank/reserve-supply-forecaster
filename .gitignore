@@ -22,6 +22,7 @@ wheels/
 MANIFEST
 
 # Virtual Environment
+.venv/
 backend/venv/
 backend/env/
 backend/ENV/
@@ -65,4 +66,3 @@ logs/
 # OS
 .DS_Store
 Thumbs.db
-

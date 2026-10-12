@@ -77,7 +77,7 @@ function App() {
               Reserve Supply Forecaster
             </h1>
             <p className="text-gray-600 text-xs sm:text-sm mt-0.5">
-              Predict future driver supply availability for Uber Reserve services
+              Predict future driver supply availability for scheduled ride services
             </p>
           </div>
         </div>

@@ -10,7 +10,7 @@ This document outlines the data schema, generation strategy, and machine learnin
 
 **Table Name:** `historical_supply`
 
-**Primary Purpose:** Train and validate the supply forecasting model with synthetic Uber-like marketplace data.
+**Primary Purpose:** Train and validate the supply forecasting model with synthetic ride-marketplace data.
 
 ### Columns
 
@@ -169,4 +169,3 @@ After model training:
 2. Save preprocessing parameters (scalers, encoders if needed)
 3. Document feature importance
 4. Create prediction function for API endpoint
-

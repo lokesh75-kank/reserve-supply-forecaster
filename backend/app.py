@@ -2,7 +2,7 @@
 FastAPI application for Reserve Supply Forecaster
 
 This API provides endpoints to predict future driver supply availability
-for Uber Reserve services based on current conditions.
+for scheduled ride services based on current conditions.
 """
 
 from fastapi import FastAPI, HTTPException

@@ -41,9 +41,9 @@ Your landing page will be available at:
 https://<your-username>.github.io/<repository-name>/
 ```
 
-For example, if your username is `johndoe` and repository is `uber-reserve-supply-forecaster`:
+For example, if your username is `johndoe` and repository is `reserve-supply-forecaster`:
 ```
-https://johndoe.github.io/uber-reserve-supply-forecaster/
+https://johndoe.github.io/reserve-supply-forecaster/
 ```
 
 ## How It Works
@@ -115,4 +115,3 @@ The workflow is configured to:
 - Use the latest GitHub Actions for Pages deployment
 
 You can modify `.github/workflows/deploy-landing.yml` if you need different behavior.
-

@@ -2,14 +2,16 @@
 
 ## Project Overview
 
-**Reserve Supply Forecaster** is a predictive analytics application that forecasts future driver supply availability for Uber Reserve services. Given a future pickup time and location (zone), the system predicts the supply envelope (low/expected/high available drivers) under different conditions (weather, events, demand), enabling operations and product teams to make better Reserve pricing & dispatch decisions.
+**Reserve Supply Forecaster** is a predictive analytics application that forecasts future driver availability for scheduled ride services. Given a future pickup time and location (zone), the system predicts a supply envelope (low/expected/high available drivers) under different conditions (weather, events, demand), enabling operations and product teams to make better booking, pricing, and dispatch decisions.
+
+> **Portfolio case study:** This independent project uses generated synthetic data only. It is not affiliated with, endorsed by, or built from the internal data or systems of any ride-hailing company.
 
 ### One-Liner
 Given a future pickup time and location (zone), forecast the supply envelope (low / expected / high available drivers) under different conditions (weather, events, demand), so operations/product can make better Reserve pricing & dispatch decisions.
 
 ## Problem Statement
 
-Uber Reserve allows riders to book rides in advance, but operations teams need to predict driver availability 1-2 hours ahead to:
+Scheduled rides let customers book in advance, but operations teams need to predict driver availability 1-2 hours ahead to:
 - Set appropriate pricing
 - Decide whether to accept more Reserve bookings
 - Trigger driver incentives when supply is tight
@@ -46,7 +48,7 @@ This project addresses **scheduling under uncertainty** by providing reliable su
 ## Project Structure
 
 ```
-uber-reserve-supply-forecaster/
+reserve-supply-forecaster/
 ├── backend/
 │   ├── data/
 │   │   └── synthetic_supply.csv          # Generated synthetic data (14,400 rows)
@@ -165,3 +167,12 @@ Detailed implementation plans for each component:
 - Advanced visualization (maps, time series charts)
 - A/B testing framework for pricing decisions
 
+## Validation
+
+```bash
+python -m unittest discover -s tests
+
+cd frontend
+npm ci
+npm run build
+```
